@@ -1,14 +1,8 @@
-<?php
-
-include_once "criaObjetos.php";
-
-?>
-
 <html>
     <head>
     </head>
     <body>
-        <h1>Listagem de livros</h1>
+        <h1>Detalhes do livros</h1>
         
         <table>
         <tr>
