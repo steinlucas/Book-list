@@ -1,7 +1,9 @@
 <?php
 
 include_once "criaObjetos.php";
+include_once "conexao.php";
 
+$opa = obterConexao();
 ?>
 
 <html>
