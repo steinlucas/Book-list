@@ -15,7 +15,6 @@ class LivroDAO {
         // recebe um objeto e atualiza no banco.
     }
 
-    
     function excluirLivro($id){
         $conexao = obterConexao();
         $comandoSQL = "SELECT * FROM LIVRO WHERE ID = ?;";
