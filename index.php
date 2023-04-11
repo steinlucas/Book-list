@@ -1,5 +1,13 @@
 <?php
 
+session_start();
+
+if(isset($_SESSION['autenticado']) == false && $_SESSION['autenticado'] != true){
+	header('Location: telaLogin.php');
+}
+
+$login = $_SESSION['login'];
+
 include_once "criaObjetos.php";
 include_once "conexao.php";
 
@@ -16,6 +24,15 @@ $opa = obterConexao();
     </head>
     <body>
     <div class="container">
+
+        <div>
+			Bem-vindo, <?php echo $login ?>
+		</div>
+
+        <div>
+			<button type="button" onclick="window.location='session/logout.php'">Sair</button>
+		</div>
+
         <h1>Listagem de livros</h1>
         
         <table class="table">

@@ -1,3 +1,13 @@
+<?php
+
+session_start();
+
+if (isset($_SESSION['autenticado'])==true && $_SESSION['autenticado']==true) {
+	header('Location: index.php');
+}
+
+?>
+
 <html>
     <head>
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -6,7 +16,5 @@
     </head>
     <body>
         <h1>Dados do livro</h1>
-        
-        
     </body>
 </html>
